@@ -1,0 +1,390 @@
+/* 公共样式，可以重复使用的，包括版心宽度，清除浮动，颜色等等 */
+
+/* 这个地方一定要注意路径问题 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 快捷导航 */
+.shortcut {
+    height: 30px;
+
+    background-color: #f1f1f1;
+}
+
+
+.shortcut .w .fl ul li,
+.shortcut .w .fr ul li {
+    display: inline-block;
+
+    line-height: 30px;
+}
+
+.shortcut .w .fl ul li a:last-child {
+    color: #c81623;
+}
+
+.shortcut .w .fr ul li {
+    margin-left: 15px;
+    /* float: left; */
+}
+
+.shortcut .w .fr ul li:nth-child(2n) {
+    width: 1px;
+    height: 12px;
+
+
+    vertical-align: text-top;
+    background-color: #666;
+}
+
+.arrow_icon::after {
+    font-family: 'icomoon';
+    content: '\e91e';
+
+    margin-left: 6px;
+}
+
+.header {
+    position: relative;
+    height: 106px;
+
+}
+
+.header .logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.header .logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+
+    background: url(../images/logo.png) no-repeat;
+
+    font-size: 0px;
+}
+
+.header .search {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    margin-left: -270px;
+
+    width: 540px;
+    height: 35px;
+
+    border: 2px solid #b1191a;
+}
+
+.header .search form input {
+    position: absolute;
+
+    width: 454px;
+    height: 31px;
+    text-indent: 1em;
+    outline: none;
+    border: none;
+}
+
+.header .search form button {
+    position: absolute;
+    right: 0;
+    width: 82px;
+    height: 33px;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 15px;
+    background-color: #b1191a;
+
+    border: none;
+    outline: none;
+}
+
+.header .hot_words {
+    position: absolute;
+    width: 465px;
+    top: 69px;
+    height: 13px;
+    left: 50%;
+    margin-left: -250px;
+
+}
+
+.header .hot_words ul li {
+    padding-left: 20px;
+    float: left;
+}
+
+/* 复习一下，这个选择器叫做，结构伪类选择器 */
+.header .hot_words ul li:first-child {
+    padding-left: 0;
+}
+
+.header .hot_words ul li:first-child a {
+    color: #c81623;
+}
+
+.header .shop_car {
+    position: absolute;
+    top: 25px;
+    right: 64px;
+    width: 140px;
+    height: 36px;
+
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.header .shop_car div {
+    position: relative;
+}
+
+.header .shop_car div .bubble {
+    /* 这里一定要给盒子大小，不然就是没有东西 */
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    background: url(../images/8.png) no-repeat;
+    right: 18px;
+    top: -5px;
+}
+
+.header .shop_car div a {
+    display: block;
+    width: 140px;
+    height: 36px;
+
+    font-size: 13px;
+    line-height: 36px;
+    text-align: center;
+}
+
+/* 复习一下，这个选择器的名字叫做，伪元素选择器 */
+.header .shop_car div a::before {
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\e93a';
+    color: brown;
+    left: 15px;
+}
+
+.header .shop_car div a::after {
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\e920';
+    right: 15px;
+}
+
+.nav {
+    width: 100%;
+    height: 47px;
+
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .w .dropdown {
+    width: 209px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+.nav .w .dropdown .dt {
+    font-size: 16px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+}
+
+.nav div .dropdown .dd {
+    /* display: none; */
+    width: 100%;
+}
+
+.nav .w .dropdown .dd ul {
+    background-color: #c81623;
+
+    border-left: 1px solid #c81623;
+}
+
+.nav .w .dropdown .dd ul li {
+    position: relative;
+    height: 31px;
+
+    line-height: 31px;
+    font-size: 14px;
+}
+
+
+.nav .w .dropdown .dd ul li a {
+    display: block;
+    color: white;
+
+    padding-left: 10px;
+    width: 100%;
+    height: 31px;
+}
+
+.nav .w .dropdown .dd ul li a::after {
+    position: absolute;
+    right: 10px;
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.nav .w .dropdown .dd ul li a:hover {
+    background-color: #f7f7f7;
+
+    color: #c81623;
+}
+
+
+.nav .w .categoryid ul li {
+    float: left;
+}
+
+.nav .w .categoryid ul li a {
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+
+    padding: 0 25px;
+}
+
+/* footer样式 */
+.footer {
+    height: 418px;
+    background-color: #f5f5f5;
+}
+
+.footer .w .mod_servecie {
+    height: 110px;
+
+    border-bottom: 1px solid #ededed;
+}
+
+.footer .w .mod_servecie ul {
+    overflow: hidden;
+}
+
+
+.footer .w .mod_servecie ul li {
+    float: left;
+    width: 166px;
+    height: 53px;
+
+    margin: 30px 37px 0;
+
+}
+
+.footer .w .mod_servecie ul li h5 {
+    width: 50px;
+    height: 49px;
+    float: left;
+    background: url(../images/icons.png) no-repeat;
+    background-position: -253px -3px;
+}
+
+.footer .w .mod_servecie ul li .service {
+    margin-top: 4px;
+}
+
+.footer .w .mod_servecie ul li .service h4 {
+    font-size: 14px;
+}
+
+.footer .w .mod_servecie ul li .service p {
+    font-size: 12px;
+}
+
+.footer .w .mod_help {
+    height: 190px;
+
+    border-bottom: 1px solid #ededed;
+}
+
+.footer .w .mod_help ul {
+    float: left;
+    margin: 20px 50px 0;
+}
+
+.footer .w .mod_help ul li {
+    padding-bottom: 3px;
+}
+
+.footer .w .mod_help ul h4 {
+    margin-bottom: 13px;
+}
+
+.footer .w .mod_help .vcode {
+    float: left;
+    width: 95px;
+
+    text-align: center;
+    margin: 20px 50px 0;
+}
+
+.footer .w .mod_help .vcode h5 {
+    height: 95px;
+    margin: 15px 0 8px 0;
+    background: url(../images/wx_cz.jpg) no-repeat;
+}
+
+.mode_copyright {
+    text-align: center;
+}
+
+/* 这个地方清除浮动，不然这个盒子就没有大小了 */
+.mode_copyright .links {
+    margin: 20px 115px 0 115px;
+    overflow: hidden;
+}
+
+.mode_copyright .links ul {
+    overflow: hidden;
+}
+
+.mode_copyright .links ul li {
+    float: left;
+}
+
+.mode_copyright .links ul li a {
+    display: inline-block;
+    width: 78px;
+    height: 14px;
+
+    line-height: 14px;
+    border-right: 1px solid #999999;
+}
+
+.mode_copyright .links ul li:last-child a {
+    border: none;
+}
+
+.mode_copyright .copyright {
+    margin-top: 15px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+
+            background-color: pink;
+        }
+
+        div::before {
+            /* 默认的是行内元素 */
+            display: inline-block;
+            width: 90px;
+            background-color: blue;
+
+            /* 这个content是必须要写的 */
+            content: '不会吧';
+        }
+
+        div::after {
+            content: '对，就这';
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div>
+        就这？
+    </div>
+
+</body>
+
+</html>

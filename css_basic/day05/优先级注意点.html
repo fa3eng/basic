@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级注意点</title>
+
+    <style>
+        div p {
+            color: pink;
+        }
+
+        #father {
+            color: red;
+        }
+
+        /* 
+            文本颜色应该是粉色
+            p首先应该继承于红色的div
+            但是继承选择器的优先级低于元素选择器，因此是粉色
+         */
+
+
+        body {
+            color: red;
+        }
+
+        /* 
+            a标签比较特殊，浏览器会指定给一个蓝色的待下划线的样式
+            所以说这里a标签里面的文本内容依然不会是红色
+          */
+    </style>
+</head>
+
+<body>
+
+    <div id="father">
+        <p>你还是很好看</p>
+    </div>
+
+    <a href="#">就这？</a>
+</body>
+
+</html>

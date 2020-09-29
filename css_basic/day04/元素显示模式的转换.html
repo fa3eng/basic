@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            /* 转换为块级元素 */
+            display: block;
+            width: 100px;
+            height: 100px;
+
+            background-color: pink;
+        }
+
+        div {
+            /* 转换为行内元素 */
+            display: inline;
+
+            background-color: red;
+        }
+
+        p {
+            /* 转换为行内块元素 */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 行内元素转换为块级元素 -->
+    <a href="#">111</a>
+    <a href="#">222</a>
+
+    <!-- 块级元素转换为行内元素 -->
+
+    <div>
+        jiuzhe ?
+    </div>
+
+    <div>
+        jiuzhe?
+    </div>
+
+    <!-- 行内元素转换成为行内块元素 -->
+    <p>inline - inline-block</p>
+    <p>inline - inline-block</p>
+</body>
+
+</html>

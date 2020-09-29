@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+
+    <style>
+        div {
+            /* border: 1px solid red; */
+
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+
+            padding-left: 80px;
+        }
+
+        .num1 {
+            width: 200px;
+            height: 200px;
+
+            border: 1px solid blue;
+            border-top: 1px solid red;
+            /* 这里也具有层叠性，top覆盖了上面的 */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        jiuzhe ?
+    </div>
+
+    <br>
+    <!-- 课堂作业 -->
+
+    <div class="num1">
+        课堂作业
+    </div>
+</body>
+
+</html>

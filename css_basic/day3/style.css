@@ -1,0 +1,29 @@
+.nav {
+    font-size: 12px;
+    text-align: center;
+}
+
+h1 {
+   text-align: center; 
+}
+
+p {
+    text-indent: 2em;
+}
+
+.time {
+    color: #888888;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pic {
+    text-align: center;
+}
+
+.footer {
+    color: #888888;
+    font-size: 12px;
+}

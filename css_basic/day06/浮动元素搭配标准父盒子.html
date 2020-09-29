@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动元素搭配标准父盒子</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: #ffffff;
+        }
+
+        .box {
+            height: 462px;
+            width: 1230px;
+            margin: 100px auto;
+            background-color: pink;
+        }
+
+        .box .nav {
+            float: left;
+            height: 462px;
+            width: 235px;
+            background-color: skyblue;
+        }
+
+        .box .img {
+            display: inline-block;
+            height: 462px;
+        }
+
+        .box div img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+
+        <div class="nav">
+            <!-- <ul>
+                <li><a href="#">商品分类</a></li>
+                <li><a href="#">商品分类</a></li>
+                <li><a href="#">商品分类</a></li>
+                <li><a href="#">商品分类</a></li>
+                <li><a href="#">商品分类</a></li>
+                <li><a href="#">商品分类</a></li>
+                <li><a href="#">商品分类</a></li>
+                <li><a href="#">商品分类</a></li>
+                <li><a href="#">商品分类</a></li>
+                <li><a href="#">商品分类</a></li>
+            </ul> -->
+        </div>
+
+        <div class="img">
+            <img src="images/1.jpg" alt="">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

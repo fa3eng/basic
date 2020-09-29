@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子绝父相</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            margin-top: 10px;
+        }
+
+        /* 父盒子 */
+        .course {
+            position: relative;
+            width: 229px;
+            height: 271px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+
+        .course>img {
+            width: 100%;
+        }
+
+        .course h4 {
+            float: left;
+            width: 184px;
+            margin-top: 25px;
+            margin-left: 25px;
+
+            font-weight: normal;
+            font-size: 14px;
+            color: #050505;
+        }
+
+        .course p {
+            float: left;
+            margin-top: 19px;
+            margin-left: 25px;
+            font-size: 12px;
+            color: #ff7c2d;
+        }
+
+        .course p span {
+            color: #999999;
+        }
+
+        /* 子元素，绝对定位 */
+        .course em img {
+            position: absolute;
+
+            right: -4px;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="course">
+
+        <em><img src="images/形状24.png" alt=""></em>
+        <img src="images/图层135.png" alt="">
+
+        <h4>Android 网络图片加载框架详解 </h4>
+
+        <p>
+            高级&nbsp;&nbsp;•&nbsp;&nbsp;
+            <span>1125人在学习</span>
+        </p>
+
+    </div>
+
+</body>
+
+</html>

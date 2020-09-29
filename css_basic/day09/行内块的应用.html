@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内块元素的应用</title>
+
+
+    <!-- 
+        使用行内块元素的优点，
+        1. 只要在外面套一个大盒子就容易实现元素居中
+        2. 每个行内块元素之间存在固定的间距，不需要我们重新设置
+     -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        .box a {
+            display: inline-block;
+
+            width: 35px;
+            height: 35px;
+
+            text-align: center;
+            line-height: 35px;
+
+            background-color: #fcfcfc;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .box .prev,
+        .box .next {
+            width: 100px;
+
+        }
+
+        .box p {
+            display: inline-block;
+        }
+
+        .box input {
+            height: 35px;
+            width: 50px;
+
+            outline: none;
+        }
+
+        .box button {
+            height: 35px;
+            width: 50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+        <a href="#" class="prev">&lt;&lt;上一页</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">...</a>
+        <a href="#" class="next">下一页&gt;&gt;</a>
+        <p>共10页，到第</p>
+        <input type="text">
+        <p>页</p>
+        <button>确定</button>
+    </div>
+</body>
+
+</html>

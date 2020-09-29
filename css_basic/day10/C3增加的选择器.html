@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C3新增的选择器</title>
+
+
+    <style>
+        /* 属性选择器 */
+        /* input[value] {
+            color: pink;
+        } */
+
+        /* 属性选择器 通过属性值 */
+        /* input[type="text"] {
+            color: pink;
+        } */
+
+        input[type^="num"] {
+            color: pink;
+        }
+
+        input[value$="num2"] {
+            color: pink;
+        }
+
+        input[value*="1"] {
+            color: powderblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- 属性选择器 -->
+
+    <!-- 利用属性选择器可以不用指定id或者是类选择器 -->
+    <input type="text" value="111">
+    <input type="text">
+
+    <!-- 属性选择器还可以选择属性的值 -->
+
+    <input type="text">
+    <input type="text">
+    <input type="search">
+
+    <!-- 属性选择器可以通过正则表达是来选 -->
+
+    <input type="num1-text" value="111">
+    <input type="num2-text" value="111">
+    <input type="num3-text" value="111">
+    <input type="text" value="就这？">
+
+    <input type="text" value="111-num2">
+    <input type="text" value="112-num2">
+    <input type="text" value="113-num2">
+    <input type="text" value="111">
+
+
+
+</body>
+
+</html>

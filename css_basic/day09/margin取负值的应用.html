@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin取负值的应用</title>
+
+    <style>
+        /* 
+            当第一个li执行css的时候外边距向左移动了1px，然后第二个li先左浮动 
+            然后贴近第一个li之后再将左边距移动1px
+        */
+        li {
+            /* 此时有定位 */
+            position: relative;
+            float: left;
+            list-style: none;
+            width: 100px;
+            height: 100px;
+
+            border: 1px solid red;
+            margin-left: -1px;
+        }
+
+        /* 扩展 */
+
+
+        li:hover {
+            /* 没有设置定位的情况 */
+            /* position: relative; */
+
+            /* 设置了定位的情况 */
+            z-index: 1;
+            border-color: blue;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+
+</html>

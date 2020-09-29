@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+a {
+    color: #050505;
+    text-decoration: none;
+}
+
+/* 确认版心，这是一个公共类，只要是版心大小的div都可以用这个 */
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+/* header样式 */
+.header {
+    height: 100px;
+
+}
+
+.logo {
+    float: left;
+
+    margin-top: 30px;
+}
+
+.nav {
+    float: left;
+    margin-left: 70px;
+}
+
+
+.nav ul li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 20px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+
+    padding: 0 8px;
+}
+
+.nav ul .last {
+    margin-right: 0px;
+}
+
+.nav ul li:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    margin-top: 30px;
+    margin-left: 90px;
+    height: 42px;
+    width: 411px;
+
+    background-color: #00a4ff;
+}
+
+.search input {
+    float: left;
+    height: 40px;
+    width: 344px;
+
+    border: 1px solid #00a4ff;
+    border-right: 0px;
+    padding-left: 15px;
+
+    color: #bfbfbf;
+    font-size: 14px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+
+    border: 0px;
+
+    background-image: url(images/fa-search.jpg);
+}
+
+.user {
+    float: left;
+    margin-top: 35px;
+    width: 119px;
+    height: 31px;
+    margin-left: 40px;
+}
+
+.user .pic {
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background: url(images/20130502185029_EkKYh拷贝.png) no-repeat;
+}
+
+.user p {
+    float: left;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+
+    font-size: 12px;
+    color: #666666;
+
+}
+
+.banner {
+    height: 420px;
+
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 420px;
+
+    background: url(images/banner2.png) no-repeat top center;
+}
+
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+
+    padding: 0 20px;
+}
+
+.subnav ul li a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+
+.subnav ul li a:hover {
+    color: #0584cf;
+}
+
+.subnav ul li a span {
+    float: right;
+
+}
+
+/* 课程表样式 */
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.course .course_header {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #9bceea;
+}
+
+.course .course_header h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.course .course_info div {
+    height: 50px;
+    width: 192px;
+    margin-left: 18px;
+    padding-top: 10px;
+    border-bottom: 2px solid #efefef;
+}
+
+.course .course_info .first {
+    margin-top: 12px;
+}
+
+.course .course_info div .first {
+    float: left;
+    color: #5a5a5a;
+    font-size: 15px;
+
+}
+
+.course .course_info div .last {
+    float: left;
+    color: #a5a5a5;
+    font-size: 10px;
+}
+
+.course button {
+    width: 200px;
+    height: 40px;
+    margin-left: 18px;
+    margin-top: 5px;
+    background-color: #fff;
+    color: #00a4ff;
+    font-size: 17px;
+
+    border: 2px solid #22b0ff;
+}
+
+.goods {
+    height: 60px;
+    margin-top: 10px;
+    line-height: 60px;
+    background-color: #fff;
+
+    box-shadow: 11px 1px 10px .1px rgba(0, 0, 0, 0.3);
+}
+
+.goods .recommend {
+    float: left;
+    padding: 0 35px;
+
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 800;
+
+}
+
+.goods ul {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 22px;
+    list-style: none;
+
+}
+
+.goods ul li {
+    float: left;
+    height: 16px;
+    padding: 0 35px;
+    border-left: 1px solid #bfbfbf;
+}
+
+.goods ul li a {
+    font-size: 16px;
+}
+
+.goods .mod a {
+    float: right;
+    margin-right: 25px;
+    color: #00a4ff;
+    font-size: 12px;
+}
+
+
+/* 精品推荐大模块 */
+
+.box {
+    height: 597px;
+    margin-top: 35px;
+}
+
+.box_hd {
+    height: 42px;
+}
+
+.box_hd h4 {
+    float: left;
+    color: #494949;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.box_hd a {
+    float: right;
+    display: block;
+    margin-right: 30px;
+    margin-top: 10px;
+
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.box_bd ul {
+    list-style: none;
+}
+
+.box_bd ul li {
+    float: left;
+    width: 230px;
+    height: 271px;
+    margin-right: 10px;
+    margin-bottom: 14px;
+
+    background-color: #fff;
+}
+
+/* 消除右边距多出来的部分 */
+.box_bd ul .last {
+    margin-right: 0;
+}
+
+/* 消除下边距多出来的部分 */
+.box_bd ul .second {
+    margin-bottom: 0;
+}
+
+.box_bd ul li img {
+    width: 100%;
+}
+
+.box_bd ul li h5 {
+    margin: 0 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #050505;
+}
+
+.box_bd ul li p {
+    margin: 0 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ff7c2d;
+}
+
+.box_bd ul li span {
+    color: #5a5a5a;
+}
+
+/* footer */
+.footer {
+    height: 517px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.footer .w {
+
+    height: 517px;
+}
+
+.footer .w .info {
+    float: left;
+
+    width: 450px;
+    height: 517px;
+
+
+
+}
+
+.footer .w .info .logo_2 {
+    float: left;
+
+    margin-top: 30px;
+    margin-left: 22px;
+
+}
+
+.footer .w .info p {
+    float: left;
+    margin-left: 18px;
+    margin-top: 24px;
+    font-size: 12px;
+
+    color: #666666;
+}
+
+.footer .w .info a {
+    float: left;
+    width: 120px;
+    height: 35px;
+    margin-top: 17px;
+    margin-left: 20px;
+
+    border: 1px solid #22b0ff;
+
+    text-align: center;
+    line-height: 35px;
+}
+
+.footer .w .about {
+    float: right;
+    width: 538px;
+    height: 129px;
+    margin-top: 35px;
+
+}
+
+.footer .w .about .about_website h3 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+}
+
+.footer .w .about .about_website ul {
+    list-style: none;
+    margin-top: 17px;
+}
+
+.footer .w .about .about_website ul li {
+    margin-bottom: 10px;
+}
+
+
+.footer .w .about .about_website ul li a {
+    font-size: 12px;
+
+}

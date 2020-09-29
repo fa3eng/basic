@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>声明两次触发error</title>
+
+    <script>
+        let str = "111";
+        let str = "111";
+        /*
+            Uncaught SyntaxError: redeclaration of let str声明两次触发error.
+            语法错误 重复声明
+            html:11:12note: Previously declared at line 10, column 12声明两次触发error.html:10:12
+        */
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

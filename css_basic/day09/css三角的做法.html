@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三角的做法</title>
+
+    <style>
+        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+
+            margin: 100px auto;
+
+            background-color: pink;
+        }
+
+        div span {
+            position: absolute;
+
+            /* 这个才是三角形~ */
+            width: 0;
+            height: 0;
+
+            /* 这个原本是制作一个盒子上面有三角尖的图形 这里只是为了调整定位 */
+            right: 5px;
+            top: -10px;
+
+            line-height: 0;
+            font-size: 0;
+            /* 先将其他的边框设置为透明 */
+            border: 5px solid transparent;
+            /* 最后再把一个边框调出颜色 */
+            border-bottom-color: pink;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div>
+        <span></span>
+    </div>
+</body>
+
+
+</html>

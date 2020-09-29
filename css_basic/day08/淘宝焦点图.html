@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝叫焦点图</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .tb-promo {
+            position: relative;
+            width: 520px;
+            height: 280px;
+
+            margin: 100px auto;
+        }
+
+        .tb-promo img {
+            width: 520px;
+            height: 280px;
+        }
+
+        .prev {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -15px;
+
+            width: 20px;
+            height: 30px;
+
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            text-decoration: none;
+            background: rgba(0, 0, 0, .3);
+
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .next {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -15px;
+
+            width: 20px;
+            height: 30px;
+
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+
+            background: rgba(0, 0, 0, .3);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        /* 也可以用并集选择器 */
+
+
+
+        .promo-nav {
+            position: absolute;
+
+            bottom: 15px;
+            left: 50%;
+            margin-left: -35px;
+
+            width: 70px;
+            height: 13px;
+            background: rgba(255, 255, 255, .3);
+
+            border-radius: 7px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .promo-nav li {
+            float: left;
+
+            width: 8px;
+            height: 8px;
+
+            margin-top: 2px;
+            margin-left: 2px;
+            border-radius: 4px;
+            background-color: #fff;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="images/tb.jpg" alt="">
+        <!-- 左侧按钮 -->
+
+        <a href="#" class="prev">&lt;</a>
+
+        <!-- 右侧按钮 -->
+        <a href="#" class="next">&gt;</a>
+
+        <ul class="promo-nav">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+</body>
+
+
+</html>

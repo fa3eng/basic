@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器搭配字体图标的使用</title>
+
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?dm2nj7');
+            src: url('fonts/icomoon.eot?dm2nj7#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?dm2nj7') format('truetype'),
+                url('fonts/icomoon.woff?dm2nj7') format('woff'),
+                url('fonts/icomoon.svg?dm2nj7#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        div {
+            position: relative;
+            width: 200px;
+            height: 30px;
+            border: 1px solid red;
+        }
+
+        /* 子绝父相 */
+        div::after {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            font-family: 'icomoon';
+            /* 这个地方一定要有反斜杠进行反义  */
+            content: '\ea50';
+        }
+    </style>
+
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

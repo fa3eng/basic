@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 网站说明 和SEO有关系 title description keyword -->
+    <title>品优购</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="品优购商城-专业的网上购物商城">
+    <!-- 关键字 -->
+    <meta name="keywords" content="网上购物，网上商城">
+
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共的样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入index.css文件 -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+
+<body>
+
+    <!-- 快捷导航栏 start -->
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>品优购欢迎您！</li>
+                    <li>
+                        <a href="#">请登录</a>
+                        <a href="#">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li></li>
+                    <li class="arrow_icon">我的品优购</li>
+                    <li></li>
+                    <li>品优购会员</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li class="arrow_icon">关注品优购</li>
+                    <li></li>
+                    <li class="arrow_icon">客户服务</li>
+                    <li></li>
+                    <li class="arrow_icon">网站导航</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- 快捷导航栏 end -->
+
+
+    <!-- header头部模块制作 start -->
+    <!-- 
+        使用logo seo优化
+        1. 将logo放在h1标签，目的是为了提权
+        2. h1里面再放一个链接，可以返回首页，把logo的背景图片给链接
+        3. 为了搜索引擎收录我们，我们的链接里面要放文字（网站名称），但是文字不能显示
+            1. 用text-inten移动到盒子外面，然后再overflow:hidden 
+            2. 直接给font-size:0
+        4. 最后还要给一个title属性，这样鼠标放在logo上面就可以看到提示文字了
+     -->
+    <header class="header w">
+        <div class="logo">
+            <h1>
+                <a href="index.html" title="品优购商城首页">品优购商城</a>
+            </h1>
+        </div>
+
+        <div class="search">
+            <!-- 将seach盒子里面装input搜索表单和button -->
+
+            <form action="#">
+                <input type="text" placeholder="语言开发">
+                <button>搜索</button>
+            </form>
+        </div>
+
+        <div class="hot_words">
+            <ul id="">
+                <li><a href="#">优惠购首发</a></li>
+                <li><a href="#">亿元优惠</a></li>
+                <li><a href="#">9.9元团购</a></li>
+                <li><a href="#">美满99减30</a></li>
+                <li><a href="#">办公用品</a></li>
+                <li><a href="#">电脑</a></li>
+                <li><a href="#">通信</a></li>
+            </ul>
+        </div>
+
+        <div class="shop_car">
+            <div>
+                <div class="bubble"></div>
+                <a href="#">
+                    我的购物车
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- header头部模块制作 end -->
+
+
+
+    <!-- nav 导航模块制作 start -->
+
+    <nav class="nav">
+
+        <div class="w">
+            <div class="dropdown fl">
+                <div class="dt">全部商品分类</div>
+                <div class="dd">
+                    <ul>
+                        <li><a href="#">家用电器</a></li>
+                        <li><a href="#">手机、数码、通信</a></li>
+                        <li><a href="#">电脑、办公</a></li>
+                        <li><a href="#">家具、家装、家具、厨具</a></li>
+                        <li><a href="#">男装、女装、童装、卫衣</a></li>
+                        <li><a href="#">个护化妆、清洁用品、宠物</a></li>
+                        <li><a href="#">鞋子、箱包、珠宝、奢侈品</a></li>
+                        <li><a href="#">运动户外、钟表</a></li>
+                        <li><a href="#">汽车、汽车用品</a></li>
+                        <li><a href="#">母婴、玩具用品</a></li>
+                        <li><a href="#">食品、酒类、生鲜、特产</a></li>
+                        <li><a href="#">医疗保健</a></li>
+                        <li><a href="#">图书、影像、电子书</a></li>
+                        <li><a href="#">彩票、旅行、充值、票务</a></li>
+                        <li><a href="#">理财、众筹、白条、保险</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="categoryid fl">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">传志超市</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">有趣</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!-- nav 导航模块制作 end -->
+
+
+    <!-- main模块的制作 start -->
+    <div class="w">
+        <div class="main">
+            <div class="focus"></div>
+            <div class="newsflash">
+
+                <div class="new">
+                    <div class="new-hd">
+                        <h4>
+                            品优购快报
+                        </h4>
+
+                        <a href="#">更多</a>
+                    </div>
+
+                    <div class="new-bd">
+                        <ul>
+                            <li><a href="#">
+                                    <span>[特惠]</span>
+                                    备战开学季&nbsp;全民半价购数码
+                                </a></li>
+
+                            <li><a href="#">
+                                    <span>[特惠]</span>
+                                    备战开学季&nbsp;全民半价购数码
+                                </a></li>
+
+                            <li><a href="#">
+                                    <span>[特惠]</span>
+                                    备战开学季&nbsp;全民半价购数码
+                                </a></li>
+
+                            <li><a href="#">
+                                    <span>[特惠]</span>
+                                    备战开学季&nbsp;全民半价购数码
+                                </a></li>
+
+                            <li><a href="#">
+                                    <span>[特惠]</span>
+                                    备战开学季&nbsp;全民半价购数码
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="lifeservice">
+
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>话费</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>机票</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>电影票</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>游戏</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>彩票</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>加油卡</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>酒店</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>火车票</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>众筹</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>理财</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>礼品卡</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img"></div>
+                                <p>白条</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- recom模块制作 start -->
+    <div class="recom w">
+
+        <div class="recom_l fl">
+            <h4>今日推荐</h4>
+        </div>
+        <div class="recom_r fl">
+
+            <ul>
+                <li><img src="upload/recom_03.jpg" alt=""></li>
+                <li><img src="upload/recom_03.jpg" alt=""></li>
+                <li><img src="upload/recom_03.jpg" alt=""></li>
+                <li><img src="upload/recom_03.jpg" alt=""></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- 楼层区域制作 -->
+    <div class="floor w">
+        <!-- 家用电器模块 -->
+        <div class="householdAppliances">
+            <div class="box_hd">
+                <h4 class="fl">家用电器</h4>
+
+                <!-- 
+                    这个地方应该严格的叫这个类名，
+                    这是一个tab栏选项卡，我们点击
+                    第一个选项时，第一个tab_content
+                    就会显示出来，其余的content都会隐藏
+                 -->
+                <ul class="tab_list fr">
+                    <li><a href="#">热门</a></li>
+                    <li><a href="#">大家电</a></li>
+                    <li><a href="#">生活电器</a></li>
+                    <li><a href="#">厨房电器</a></li>
+                    <li><a href="#">个护健康</a></li>
+                    <li><a href="#">应季电器</a></li>
+                    <li><a href="#">空气/净水</a></li>
+                    <li><a href="#">新奇特</a></li>
+                    <li><a href="#">高端电器</a></li>
+                </ul>
+            </div>
+            <div class="box_bd">
+                <div class="tab_content">
+                    <!-- 内容1 -->
+                    <div class="tab_list_item">
+                        <div class="col_210">
+                            <ul>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                            </ul>
+
+                            <a href="#">
+                                <img src="upload/floor-1-1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col_329">
+                            <a href="#">
+                                <img src="upload/floor-1-b01.png" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="col_221">
+
+                            <a href="#">
+                                <img src="upload/floor-1-2.png" alt="">
+                            </a>
+
+                            <a href="#" class="border_top_line">
+                                <img src="upload/floor-1-3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col_221">
+                            <a href="#">
+                                <img src="upload/floor-1-4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col_219">
+                            <a href="#">
+                                <img src="upload/floor-1-5.png" alt="">
+                            </a>
+
+                            <a href="#" class="border_top_line">
+                                <img src="upload/floor-1-6.png" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mobilePhone">
+            <div class="box_hd">
+                <h4 class="fl">家用电器</h4>
+
+                <!-- 
+                    这个地方应该严格的叫这个类名，
+                    这是一个tab栏选项卡，我们点击
+                    第一个选项时，第一个tab_content
+                    就会显示出来，其余的content都会隐藏
+                 -->
+                <ul class="tab_list fr">
+                    <li><a href="#">热门</a></li>
+                    <li><a href="#">大家电</a></li>
+                    <li><a href="#">生活电器</a></li>
+                    <li><a href="#">厨房电器</a></li>
+                    <li><a href="#">个护健康</a></li>
+                    <li><a href="#">应季电器</a></li>
+                    <li><a href="#">空气/净水</a></li>
+                    <li><a href="#">新奇特</a></li>
+                    <li><a href="#">高端电器</a></li>
+                </ul>
+            </div>
+            <div class="box_bd">
+                <div class="tab_content">
+                    <!-- 内容1 -->
+                    <div class="tab_list_item">
+                        <div class="col_210">
+                            <ul>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                                <li><a href="#">节能补贴</a></li>
+                            </ul>
+
+                            <a href="#">
+                                <img src="upload/floor-1-1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col_329">
+                            <a href="#">
+                                <img src="upload/floor-1-b01.png" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="col_221">
+
+                            <a href="#">
+                                <img src="upload/floor-1-2.png" alt="">
+                            </a>
+
+                            <a href="#" class="border_top_line">
+                                <img src="upload/floor-1-3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col_221">
+                            <a href="#">
+                                <img src="upload/floor-1-4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col_219">
+                            <a href="#">
+                                <img src="upload/floor-1-5.png" alt="">
+                            </a>
+
+                            <a href="#" class="border_top_line">
+                                <img src="upload/floor-1-6.png" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer模块制作 start -->
+
+    <footer class="footer">
+
+        <!-- 版心 -->
+        <div class="w">
+
+            <div class="mod_servecie">
+                <ul>
+                    <li>
+                        <h5></h5>
+                        <div class="service">
+                            <h4>正品保障</h4>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service">
+                            <h4>急速物流</h4>
+                            <p>急速物流，急速送达</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service">
+                            <h4>无忧售后</h4>
+                            <p>七天无理由售后</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service">
+                            <h4>特色服务</h4>
+                            <p>私人定制家电套餐</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5></h5>
+                        <div class="service">
+                            <h4>帮助中心</h4>
+                            <p>您的购物指南</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="mod_help">
+                <ul>
+                    <h4>配送方式</h4>
+                    <li><a href="#">上门自提</a></li>
+                    <li><a href="#">211限时达</a></li>
+                    <li><a href="#">配送服务查询</a></li>
+                    <li><a href="#">配送费收取标准</a></li>
+                    <li><a href="#">海外配送</a></li>
+                </ul>
+
+                <ul>
+                    <h4>配送方式</h4>
+                    <li><a href="#">上门自提</a></li>
+                    <li><a href="#">211限时达</a></li>
+                    <li><a href="#">配送服务查询</a></li>
+                    <li><a href="#">配送费收取标准</a></li>
+                    <li><a href="#">海外配送</a></li>
+                </ul>
+
+                <ul>
+                    <h4>配送方式</h4>
+                    <li><a href="#">上门自提</a></li>
+                    <li><a href="#">211限时达</a></li>
+                    <li><a href="#">配送服务查询</a></li>
+                    <li><a href="#">配送费收取标准</a></li>
+                    <li><a href="#">海外配送</a></li>
+                </ul>
+
+                <ul>
+                    <h4>配送方式</h4>
+                    <li><a href="#">上门自提</a></li>
+                    <li><a href="#">211限时达</a></li>
+                    <li><a href="#">配送服务查询</a></li>
+                    <li><a href="#">配送费收取标准</a></li>
+                    <li><a href="#">海外配送</a></li>
+                </ul>
+
+                <ul>
+                    <h4>配送方式</h4>
+                    <li><a href="#">上门自提</a></li>
+                    <li><a href="#">211限时达</a></li>
+                    <li><a href="#">配送服务查询</a></li>
+                    <li><a href="#">配送费收取标准</a></li>
+                    <li><a href="#">海外配送</a></li>
+                </ul>
+
+                <div class="vcode">
+                    <h4>帮助中心</h4>
+                    <h5></h5>
+                    <p>品优购客户端</p>
+                </div>
+
+            </div>
+
+            <div class="mode_copyright w">
+
+                <div class="links">
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">联系客服</a></li>
+                        <li><a href="#">商家入驻</a></li>
+                        <li><a href="#">营销中心</a></li>
+                        <li><a href="#">手机品优购</a></li>
+                        <li><a href="#">友情链接</a></li>
+                        <li><a href="#">销售联盟</a></li>
+                        <li><a href="#">品优购社区</a></li>
+                        <li><a href="#">品优购公益</a></li>
+                        <li><a href="#">English&nbsp;site</a></li>
+                        <li><a href="#">Contact&nbsp;U</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="copyright">
+                    <p> 地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn
+                        <br>
+                        京ICP备08001421号京公网安备110108007702
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- footer模块制作 end -->
+
+
+</body>
+
+</html>

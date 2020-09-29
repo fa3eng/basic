@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+.nav_list {
+    width: 100%;
+    height: 47px;
+
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav_list .w {
+    overflow: hidden;
+}
+
+.nav_list ul {
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+}
+
+.nav_list ul li {
+    float: left;
+    margin: 0 18px;
+}
+
+
+
+.nav_list ul li a h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav_list ul li:last-child ::after {
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\e920';
+
+    right: -80px;
+}
+
+.sk_container .sk_hd {
+    width: 1200px;
+    height: 120px;
+}
+
+.header .logo h1 a {
+    position: relative;
+}
+
+.header .logo h1 a::after {
+    position: absolute;
+    content: url(../images/sk.png);
+    width: 56px;
+    height: 26px;
+
+    right: -84px;
+    top: 50%;
+
+    margin-top: -13px;
+
+    padding-left: 14px;
+    border-left: 1px solid #b1191a;
+}

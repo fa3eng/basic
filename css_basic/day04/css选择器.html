@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+
+    <style>
+        /* 后代选择器 */
+        ol li {
+            color: red;
+        }
+
+        ol li a {
+            color: pink;
+        }
+
+
+        /* 子元素选择器 */
+        /* 这个东西就只会选择自己的亲儿子 */
+        div>p {
+            color: royalblue;
+        }
+
+
+        /* 并集选择器 */
+
+        div,
+        p {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 后代选择器 -->
+    <ol>
+        <li></li>
+        <li></li>
+        <li><a href="#">test</a></li>
+    </ol>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+    <!-- 子元素选择器 -->
+
+    <div>
+        <p>1</p>
+        <p>
+            <a href="#">2</a>
+        </p>
+    </div>
+
+    <!-- 并集选择器 -->
+
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>小猪佩奇</li>
+        <li>猪爸爸</li>
+        <li>猪妈妈</li>
+    </ul>
+
+
+
+</body>
+
+</html>

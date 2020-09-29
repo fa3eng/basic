@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高的继承</title>
+
+    <style>
+        body {
+            color: pink;
+
+            font: 12px/1.5 'Microsoft YaHei';
+        }
+
+        div {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+
+        /*
+            我在调试的发现p标签其实会有margin的，你把font-size设置成多少
+            那么p标签的margin就会有多少。
+
+            而什么是行高，其实之前有张图解释过了，就是字体高度加上文字上下
+            空隙，合起来就是行高了，在p标签和div中看起来行高好像有不一样
+            是因为p标签自带margin，在开发者工具中其实可以看见p里面的内容
+            就是蓝色那一块还是和div中的那一块是一样的。
+         */
+    </style>
+
+</head>
+
+<body>
+    <div>就这？？？？</div>
+    <p>就这？？？</p>
+</body>
+
+</html>

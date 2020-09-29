@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课后作业1</title>
+
+    <!-- 实际上我这是一个整体的东西，只有bar_son那里有过渡的东西在 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            height: 500px;
+
+            margin: 30px auto;
+
+            background-color: pink;
+        }
+
+        .box .img {
+            width: 100%;
+            height: 300px;
+
+            background-color: skyblue;
+        }
+
+        .box h4 {
+            margin: 10px 5px 0 5px;
+
+            font-size: 15px;
+            font-weight: 400;
+            color: grey;
+        }
+
+        .box .price {
+            margin: 10px 5px 0 5px;
+
+            font-size: 19px;
+            font-weight: 900;
+            color: red;
+        }
+
+        .box .price span {
+
+            font-size: 14px;
+            color: grey;
+            text-decoration: line-through;
+        }
+
+        .box .bar_box {
+            margin: 10px 5px 0 5px;
+        }
+
+        .box .bar_box p {
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        .box .bar_box p span {
+            color: red;
+        }
+
+        .box .bar_box .bar {
+            display: inline-block;
+            width: 140px;
+            height: 10px;
+
+            border-radius: 10px;
+
+            border: 2px solid red;
+        }
+
+        /* 主要是这一段体现了CSS3的过渡 */
+        .box .bar_box .bar .bar_son {
+            width: 70px;
+            height: 8px;
+            margin: 1px;
+
+            background-color: red;
+            border-radius: 10px;
+
+            transition: all 1S;
+        }
+
+        .box .bar_box .bar .bar_son:hover {
+            width: 139px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="img">
+        </div>
+
+        <h4>
+            apple苹果iPhone&nbsp;6s&nbsp;Plus（A1699）32G金色&nbsp;移动联通电信4G手机
+        </h4>
+
+        <p class="price">￥6088 <span>￥6988</span></p>
+
+        <div class="bar_box">
+            <p>已售 <span>87%</span></p>
+            <div class="bar">
+                <div class="bar_son"></div>
+            </div>
+            <p>剩余<span>29</span>件</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

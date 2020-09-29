@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标的使用</title>
+
+
+
+    <style>
+        /* 在下载的压缩包中的style文件中有 */
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?tmkagg');
+            src: url('fonts/icomoon.eot?tmkagg#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?tmkagg') format('truetype'),
+                url('fonts/icomoon.woff?tmkagg') format('woff'),
+                url('fonts/icomoon.svg?tmkagg#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        /* 引入字体库，以及可以对其进行修改 */
+        span {
+            font-family: 'icomoon';
+
+            color: pink;
+            font-size: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 这个框是特殊的，在下载的压缩包中有一个demo文件，点进去 -->
+    <span></span>
+</body>
+
+</html>
