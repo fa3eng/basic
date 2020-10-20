@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片放大案例</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            overflow: hidden;
+            margin: 100px auto;
+            width: 200px;
+            height: 200px;
+        }
+
+        img {
+
+            width: 180px;
+
+            transition: all 0.2s;
+        }
+
+        img:hover {
+
+            transform: scale(1.1, 1.1);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <img src="img/focus.png" alt="">
+    </div>
+</body>
+
+</html>

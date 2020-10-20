@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实现旋转的效果</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+
+            margin: 100px auto;
+
+            background-color: pink;
+
+            /* 过渡 */
+            transition: all 0.7s;
+        }
+
+        div:hover {
+
+            transform: rotate(360deg);
+        }
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            width: 60px;
+            height: 60px;
+
+            border-radius: 50%;
+
+            background-color: purple;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div>
+        <P></P>
+    </div>
+
+</body>
+
+</html>

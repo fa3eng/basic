@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热点图案例</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+
+            background-color: black;
+
+        }
+
+        @keyframes hotdot {
+
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.2);
+            }
+
+        }
+
+        #map {
+            position: relative;
+            width: 747px;
+            height: 617px;
+            margin: 20px auto;
+            background-image: url(img/map.png);
+
+        }
+
+        #beijing {
+            position: absolute;
+
+            top: 194px;
+            right: 144px;
+
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 0 12px #009dfd;
+
+            border-radius: 50%;
+
+            animation: hotdot .5s infinite;
+
+        }
+
+        #beijing2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            width: 40px;
+            height: 40px;
+
+            box-shadow: 0 0 12px #009dfd;
+            border-radius: 50%;
+
+        }
+
+        #beijing3 {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            width: 20px;
+            height: 20px;
+
+            box-shadow: 0 0 12px #009dfd;
+            border-radius: 50%;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="map">
+
+        <div id="beijing">
+            <div id="beijing2"></div>
+            <div id="beijing3"></div>
+        </div>
+
+
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实现三角箭头</title>
+
+    <style>
+        * {
+            box-sizing: content-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            position: relative;
+            width: 300px;
+            height: 40px;
+
+            margin: 100px auto;
+
+            border: 2px solid gray;
+        }
+
+        div::after {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid gray;
+            border-bottom: 2px solid gray;
+
+            transform: rotate(44deg);
+            transition: all 0.3s;
+        }
+
+        div:hover::after {
+            transform: rotate(225deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+    </div>
+
+</body>
+
+</html>

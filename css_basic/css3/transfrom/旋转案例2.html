@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转案例2</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body>div {
+            overflow: hidden;
+            margin: 100px auto;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+        }
+
+        body>div>div {
+
+            width: 100px;
+            height: 100px;
+
+            background-color: purple;
+
+            transform-origin: left bottom;
+            transition: all 0.3s;
+        }
+
+        body>div>div:hover {
+
+            transform: rotate(90deg);
+
+        }
+
+        /* 不用伪类做的话有问题 */
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <div></div>
+    </div>
+</body>
+
+</html>
