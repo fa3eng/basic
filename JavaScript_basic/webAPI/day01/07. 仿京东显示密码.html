@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 点击按钮，切换密码框为文本框，并可以查看密码的明文 -->
+
+    <input type="text" placeholder="用户名">
+    <input type="password" placeholder="密码" flag="0">
+
+    <button>show password</button>
+
+
+    <script>
+        let btn = document.getElementsByTagName('button')[0];
+        let passw = document.getElementsByTagName('input')[1];
+
+        btn.onclick = function () {
+
+            if (passw.flag == '0') {
+                passw.type = 'text';
+                passw.flag = '1';
+            } else {
+                passw.type = 'password';
+                passw.flag = '0';
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

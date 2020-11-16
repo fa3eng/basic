@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div>
+        <ul class="one">
+            <li>jiuzhe </li>
+            <li>jiuzhe??</li>
+        </ul>
+        <ul class="two">
+            <li>1</li>
+        </ul>
+    </div>
+
+</body>
+
+<script>
+    // querySelector 可以选择类，也可以选择id和tag，但是只能选择第一个
+    let ul_one = document.querySelector('.one'); // 选择了类
+    let ul_first = document.querySelector('ul'); // 选择tag
+
+    // 全部都选
+    let ul = document.querySelectorAll('li');
+
+    console.log(ul_one);
+    console.log(ul_first);
+    console.log(ul);
+</script>
+
+<script src="03. 获取特殊元素.js"></script>
+
+</html>

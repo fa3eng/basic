@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>就这</p>
+
+    <button>确实就这</button>
+</body>
+
+<script>
+    let p = document.getElementsByTagName('p')[0];
+    let button = document.getElementsByTagName('button')[0];
+
+    p.innerText = 'jiuzhe';
+
+    button.onclick = function () {
+        button.innerText = 'queshi jiuszhe ';
+    }
+
+    // innerHTML 是识别html标签的。且这个是w3c标准的
+
+    button.innerHTML = '<strong>就这吗</strong>';
+
+    alert(button.innerHTML);
+    alert(button.innerText);
+</script>
+
+</html>

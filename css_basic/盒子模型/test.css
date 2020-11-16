@@ -1,0 +1,13 @@
+div {
+    box-sizing: content-box;
+    /* 使用标准盒子 */
+
+    width: 100px;
+    height: 100px;
+
+    /* margin: 20px; */
+    /* 将margin的上下左右都设置20px */
+
+    margin-top: 20px;
+    /* 只将上外边距（上面的margin）设置20px */
+}
