@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .drop_down_menu {
+
+            width: 100px;
+
+            background-color: pink;
+        }
+
+        .menu {
+
+            display: none;
+            /* visibility: hidden; */
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="drop_down_menu">
+        下拉菜单
+        <div class="menu">
+            <ul>
+                <li>第一个</li>
+                <li>第二个</li>
+                <li>第三个</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    let drop_down = document.querySelector('.drop_down_menu');
+
+    drop_down.onmouseover = function () {
+        let menu = document.querySelector('.menu');
+
+        menu.style.display = 'block';
+
+    }
+
+    drop_down.onmouseout = function () {
+        let menu = document.querySelector('.menu');
+
+        menu.style.display = 'none';
+
+    }
+</script>
+
+
+</html>

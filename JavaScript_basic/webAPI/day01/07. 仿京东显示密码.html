@@ -5,32 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+
+            margin: 100px auto;
+
+        }
+
+        div {
+            margin-left: 400px;
+        }
+
+        #usr {
+            display: block;
+
+            margin-bottom: 10px;
+
+            width: 300px;
+            height: 30px;
+        }
+
+        #passw {
+
+            width: 300px;
+            height: 30px;
+
+        }
+
+        button {
+
+            height: 30px;
+
+        }
+    </style>
+
 </head>
+
 
 <body>
 
     <!-- 点击按钮，切换密码框为文本框，并可以查看密码的明文 -->
 
-    <input type="text" placeholder="用户名">
-    <input type="password" placeholder="密码" flag="0">
+    <div>
 
-    <button>show password</button>
+        <input type="text" placeholder="用户名" id="usr">
+        <input type="password" placeholder="密码" id="passw">
+
+        <button>显示密码</button>
+
+
+    </div>
 
 
     <script>
         let btn = document.getElementsByTagName('button')[0];
         let passw = document.getElementsByTagName('input')[1];
+        let usr = document.getElementsByTagName('input')[0];
+
+        let flag = "0";
+
+        usr.onfocus = function () {
+            this.setAttribute('placeholder', ' ');
+        }
+
+        usr.onblur = function () {
+            this.setAttribute('placeholder', '用户名');
+        }
+
+        passw.onfocus = function () {
+            this.setAttribute('placeholder', ' ');
+        }
+
+        passw.onblur = function () {
+            this.setAttribute('placeholder', '密码');
+        }
 
         btn.onclick = function () {
 
-            if (passw.flag == '0') {
+            if (flag == '0') {
                 passw.type = 'text';
-                passw.flag = '1';
+                flag = '1';
             } else {
                 passw.type = 'password';
-                passw.flag = '0';
+                flag = '0';
             }
-
 
         }
     </script>

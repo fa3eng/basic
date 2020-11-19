@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button>
+        宝贝，关灯
+    </button>
+
+</body>
+
+<script>
+    let btn = document.getElementsByTagName('button')[0];
+    let body = document.querySelector('body');
+
+
+    (function () {
+
+        let flag = 1;
+
+        btn.onclick = function () {
+
+            if (flag == 1) {
+                flag = 0;
+                btn.innerText = '开灯宝贝';
+                body.style.backgroundColor = 'black'
+            } else if (flag == 0) {
+                flag = 1;
+                btn.innerText = '宝贝，关灯';
+                body.style.backgroundColor = 'white';
+            }
+
+        }
+    })();
+</script>
+
+</html>
